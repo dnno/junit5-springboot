@@ -1,5 +1,8 @@
 package de.rpr.junit5springboot.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class GermanGreetingService implements GreetingService {
 
     @Override
