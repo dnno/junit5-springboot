@@ -25,7 +25,6 @@ class GreetingControllerTest {
 
     @ComponentScan(basePackageClasses = GreetingController.class)
     static class Config {
-
     }
 
     @Autowired
