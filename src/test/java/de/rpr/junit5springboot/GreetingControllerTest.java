@@ -42,6 +42,7 @@ class GreetingControllerTest {
     }
 
     @Test
+    @DisplayName("for a morning greeting a GreetingService should produce a result")
     void morning_greeting_should_invoke_greetingService() throws Exception {
         when(greetingService.accepts(any())).thenReturn(true);
         MockHttpServletResponse response = mockMvc.perform(get("/greeting/morning")).andReturn().getResponse();
